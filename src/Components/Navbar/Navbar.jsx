@@ -8,8 +8,8 @@ export default function Navbar() {
   useGSAP(() => {
     let tl = gsap.timeline()
     tl.from('.navbar__hero', {
-      y: -20,
-      duration: 0.3,
+      y: -40,
+      duration: 0.7,
       opacity: 0,
       delay: 0.5,
     })
@@ -26,7 +26,7 @@ export default function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar__hero">
-          NEXTGEN
+          NEXGEN
         </div>
         <div className="navbar__links">
           <a href="#work" className="navbar__link">Work</a>
