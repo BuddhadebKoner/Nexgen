@@ -2,31 +2,73 @@ import React from 'react'
 
 import { useGSAP } from '@gsap/react'
 import { gsap } from 'gsap'
-
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './Hero.css'
 import HeroBigText from '../HeroBigText/HeroBigText'
+
+
+
 export default function Hero() {
+
+    gsap.registerPlugin(ScrollTrigger)
 
     useGSAP(() => {
         let tl = gsap.timeline()
         tl.from('.hero_logo_text', {
             y: -20,
-            duration: 2,
+            duration: 3,
             opacity: 0,
             delay: 0.5,
             stagger: 0.1,
             scale: 1.5,
+            scrub: 4,
             ease: 'elastic.out(1, -1)',
         })
         tl.to('.X_hero_image', {
-            rotate: 50,
+            rotateX: 360,
             duration: 2,
+            scrub: 4,
             delay: 0.5,
             repeat: -6,
             yoyo: true,
         })
+
     })
-    return (
+
+    useGSAP(() => {
+        gsap.to('.hero_text_container', {
+            transform: 'translate(-50%,10%)',
+            scrollTrigger: {
+                trigger: '.hero_text_container',
+                scroller: 'body',
+                start: 'top 40%',
+                end: 'top -100%',
+                scrub: 4,
+            },
+        })
+    })
+
+    useGSAP(() => {
+        gsap.from('.all_h1_tags', {
+            y: -20,
+            duration: 3,
+            opacity: 0,
+            delay: 0.5,
+            scrub: 4,
+            ease: 'elastic.out(1, -1)',
+        })
+        gsap.to('.all_h1_tags', {
+            transform: 'translate(50%,-20%)',
+            scrollTrigger: {
+                trigger: 'all_h1_tags h1',
+                scroller: 'body',
+                start: 'top 0%',
+                end: 'top -100%',
+                scrub: 4,
+            },
+        })
+    })
+    return (    
         <>
             <div className="main_hero_container">
                 <div className="hero_text_container">
@@ -38,8 +80,13 @@ export default function Hero() {
                     <img className="E_hero_image hero_logo_text" src="nexgen_text\E.svg" alt="" />
                     <img className="N_hero_image hero_logo_text" src="nexgen_text\N.svg" alt="" />
                 </div>
-                <HeroBigText />
+                <div className="hero_sub_text_container">
+                    <div className="all_h1_tags">
+                        <h1>For Next Generation</h1>
+                    </div>
+                </div>
             </div>
+            <HeroBigText />
         </>
     )
 }

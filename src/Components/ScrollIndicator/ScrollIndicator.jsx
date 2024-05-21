@@ -15,7 +15,7 @@ export default function ScrollIndicator() {
                 start: 'top 80%',
                 end: 'buttom -500%',
                 scrub: 2,
-                markers: true,
+                markers: false,
             },
             rotation: 900,
         });

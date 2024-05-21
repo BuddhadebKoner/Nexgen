@@ -19,7 +19,7 @@ export default function Wellcomemess() {
                 end: 'top -100%',
                 scrub: 3,
                 pin: true,
-                markers: true,
+                markers: false,
             },
         });
     });
