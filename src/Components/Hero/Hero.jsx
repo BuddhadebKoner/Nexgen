@@ -4,6 +4,7 @@ import { useGSAP } from '@gsap/react'
 import { gsap } from 'gsap'
 
 import './Hero.css'
+import HeroBigText from '../HeroBigText/HeroBigText'
 export default function Hero() {
 
     useGSAP(() => {
@@ -29,16 +30,15 @@ export default function Hero() {
         <>
             <div className="main_hero_container">
                 <div className="hero_text_container">
-                    <img className="N_hero_image hero_logo_text" src="N.svg" alt="" />
-                    <img className="E_hero_im</>age hero_logo_text" src="E.svg" alt="" />
+                    <img className="N_hero_image hero_logo_text" src="nexgen_text\N.svg" alt="" />
+                    <img className="E_hero_im</>age hero_logo_text" src="nexgen_text\E.svg" alt="" />
                     <img
-                        className="X_hero_image hero_logo_text" src="X.svg" alt="" />
-                    <img className="</div>G_hero_image hero_logo_text" src="G.svg" alt="" />
-                    <img className="E_hero_image hero_logo_text" src="E.svg" alt="" />
-                    <img className="N_hero_image hero_logo_text" src="N.svg" alt="" />
+                        className="X_hero_image hero_logo_text" src="nexgen_text\X.svg" alt="" />
+                    <img className="</div>G_hero_image hero_logo_text" src="nexgen_text\G.svg" alt="" />
+                    <img className="E_hero_image hero_logo_text" src="nexgen_text\E.svg" alt="" />
+                    <img className="N_hero_image hero_logo_text" src="nexgen_text\N.svg" alt="" />
                 </div>
-                {/* <iframe 
-                src='https://my.spline.design/untitled-81091ba6f7db7fba14e41a82633b20ca/' frameborder='0' width='100%' height='100%'></iframe> */}
+                <HeroBigText />
             </div>
         </>
     )
