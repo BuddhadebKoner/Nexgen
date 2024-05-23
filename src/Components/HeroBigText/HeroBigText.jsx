@@ -5,86 +5,84 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import './HeroBigText.css'
 
+gsap.registerPlugin(ScrollTrigger)
+
+
 export default function HeroBigText() {
-    gsap.registerPlugin(ScrollTrigger)
-
     useGSAP(() => {
-        gsap.from('.hero_big_text_we', {
-            y: 20,
-            duration: 3,
-            opacity: 0,
-            delay: 0.5,
-            stagger: 0.6,
-            scrub: 4,
-            ease: 'elastic.out(1, -1)',
-            scrollTrigger: {
-                trigger: '.hero_big_text_we h1',
-                toggleActions: 'play none none none',
-            },
-        })
-        gsap.from('.hero_big_text_creating', {
-            y: 20,
-            duration: 3,
-            opacity: 0,
-            delay: 0.5,
-            stagger: 0.6,
-            scrub: 4,
-            ease: 'elastic.out(1, -1)',
-            scrollTrigger: {
-                trigger: '.hero_big_text_creating h1',
-                toggleActions: 'play none none none',
-            },
-        })
-        gsap.from('.hero_big_text_Engaging', {
-            y: 20,
-            duration: 3,
-            opacity: 0,
-            delay: 0.5,
-            stagger: 0.6,
-            scrub: 4,
-            ease: 'elastic.out(1, -1)',
-            scrollTrigger: {
-                trigger: '.hero_big_text_Engaging h1',
-                toggleActions: 'play none none none',
-            },
-        })
-        gsap.from('.hero_big_text_Digital_Journeys', {
-            y: 20,
-            duration: 3,
-            opacity: 0,
-            delay: 0.5,
-            stagger: 0.6,
-            scrub: 4,
-            ease: 'elastic.out(1, -1)',
-            scrollTrigger: {
-                trigger: '.hero_big_text_Digital_Journeys h1',
-                toggleActions: 'play none none none',
-            },
-        })
-    })
+        let tl = gsap.timeline()
 
-
+        tl.from('.hero_big_text_we span', {
+            y: 100,
+            duration: 0.3,
+            opacity: 0,
+            delay: 0.1,
+            stagger: 0.12,
+        });
+        tl.from('.hero_big_text_creating span', {
+            y: 100,
+            duration: 0.3,
+            opacity: 0,
+            stagger: 0.12,
+        });
+        tl.from('.hero_big_text_Engaging span', {
+            y: 100,
+            duration: 0.3,
+            opacity: 0,
+            stagger: 0.12,
+        });
+        tl.from('.hero_big_text_Digital_Journeys span', {
+            y: 100, 
+            duration: 0.3,
+            opacity: 0, 
+            stagger: 0.12,
+        });
+    });
 
 
     return (
         <>
             <div className="hero_big_text_container">
                 <div className="hero_big_text_we">
-                    <h1 className='hero_big_text_h1'
-                    > We
-                    </h1>
+                    <span id="we" className='hero_big_text_span'>W</span>
+                    <span id="e" className='hero_big_text_span'>e</span>
                 </div>
                 <div className="hero_big_text_creating">
-                    <h1 className='hero_big_text_h1'
-                    >Creating</h1>
+                    <span id="c" className='hero_big_text_span'>C</span>
+                    <span id="r" className='hero_big_text_span'>r</span>
+                    <span id="e" className='hero_big_text_span'>e</span>
+                    <span id="a" className='hero_big_text_span'>a</span>
+                    <span id="t" className='hero_big_text_span'>t</span>
+                    <span id="i" className='hero_big_text_span'>i</span>
+                    <span id="n" className='hero_big_text_span'>n</span>
+                    <span id="g" className='hero_big_text_span'>g</span>
                 </div>
                 <div className="hero_big_text_Engaging">
-                    <h1 className='hero_big_text_h1'
-                    >Engaging</h1>
+                    <span id="E" className='hero_big_text_span'>E</span>
+                    <span id="n" className='hero_big_text_span'>n</span>
+                    <span id="g" className='hero_big_text_span'>g</span>
+                    <span id="a" className='hero_big_text_span'>a</span>
+                    <span id="g" className='hero_big_text_span'>g</span>
+                    <span id="i" className='hero_big_text_span'>i</span>
+                    <span id="n" className='hero_big_text_span'>n</span>
+                    <span id="g" className='hero_big_text_span'>g</span>
                 </div>
                 <div className="hero_big_text_Digital_Journeys">
-                    <h1 className='hero_big_text_h1'
-                    >Digital Journeys</h1>
+                    <span className='hero_big_text_span'>D</span>
+                    <span className='hero_big_text_span'>i</span>
+                    <span className='hero_big_text_span'>g</span>
+                    <span className='hero_big_text_span'>i</span>
+                    <span className='hero_big_text_span'>t</span>
+                    <span className='hero_big_text_span'>a</span>
+                    <span className='hero_big_text_span'>l_</span>
+                    <span className='hero_big_text_span'>J</span>
+                    <span className='hero_big_text_span'>o</span>
+                    <span className='hero_big_text_span'>u</span>
+                    <span className='hero_big_text_span'>r</span>
+                    <span className='hero_big_text_span'>n</span>
+                    <span className='hero_big_text_span'>e</span>
+                    <span className='hero_big_text_span'>y</span>
+                    <span className='hero_big_text_span'>s</span>
                 </div>
             </div>
         </>

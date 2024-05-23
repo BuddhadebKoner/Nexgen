@@ -17,3 +17,11 @@
     position: fixed;
     border-radius: 50%;
 }
+
+.scroll_arrow {
+    z-index: 2;
+    position: fixed;
+    width: 100px;
+    right: 6.4rem;
+    bottom: 4.6rem
+}

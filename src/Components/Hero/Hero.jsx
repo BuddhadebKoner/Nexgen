@@ -81,8 +81,8 @@ export default function Hero() {
                     <img className="N_hero_image hero_logo_text" src="nexgen_text\N.svg" alt="" />
                 </div>
                 <div className="hero_sub_text_container">
-                    <div className="all_h1_tags">
-                        <h1>For Next Generation</h1>
+                    <div className="all_h1_tags"> 
+                        <h1>For Next Generation</h1>  
                     </div>
                 </div>
             </div>

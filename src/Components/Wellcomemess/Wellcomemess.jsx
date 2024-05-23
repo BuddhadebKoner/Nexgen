@@ -27,7 +27,7 @@ export default function Wellcomemess() {
     return (
         <>
             <div className="Wellcomemess_container">
-                <h1>Welcome</h1>
+                <h1>Welcome</h1>    
             </div>
         </>
     );

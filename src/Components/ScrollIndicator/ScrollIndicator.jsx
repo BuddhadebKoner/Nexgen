@@ -13,7 +13,7 @@ export default function ScrollIndicator() {
                 scroller: 'body',
                 trigger: '.scrollIndicator_container',
                 start: 'top 80%',
-                end: 'buttom -500%',
+                end: 'buttom -1000%',
                 scrub: 2,
                 markers: false,
             },
@@ -22,12 +22,19 @@ export default function ScrollIndicator() {
     }, []);
 
     return (
-        <div className="scrollIndicator_container">
-            <img 
-                className='scrollIndicator_img'
-                src="/scrollIndicater.svg" 
-                alt="Scroll Indicator" 
-            />
-        </div>
+        <>
+            <div className="scrollbar_and_arrow">
+
+                <div className="scrollIndicator_container">
+                    <img
+                        className='scrollIndicator_img'
+                        src="/scrollIndicater.svg"
+                        alt="Scroll Indicator"
+                    />
+                    <label htmlFor="scroll_arrow"></label>
+                </div>
+                <img className='scroll_arrow' src="scroll_arrow.svg" alt="" />
+            </div>
+        </>
     );
 }
