@@ -3,7 +3,7 @@ import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'; // Import ScrollTrigger
 
-import './Wellcomemess.css';
+import '../../styles/Wellcomemess.css';
 
 export default function Wellcomemess() {
 

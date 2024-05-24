@@ -1,4 +1,4 @@
-.our_service_includes_container{
+.our_product_includes_container{
     width: 100%;
     height: 100vh;
     background-color: #000000;
@@ -6,7 +6,6 @@
     display: flex;
     justify-content: center;
 }
-
 .string{
     width: 1000px;
     height: 200px;

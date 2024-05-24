@@ -1,11 +1,11 @@
 import React, { useEffect, useCallback, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import '../../styles/String.css'
 
 
 gsap.registerPlugin(ScrollTrigger);
 
-import './String.css'
 
 export default function String() {
 

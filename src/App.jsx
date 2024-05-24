@@ -1,9 +1,5 @@
 import React from 'react'
-import { useGSAP } from '@gsap/react';
-import { gsap } from 'gsap';
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import { ScrollSmoother } from 'gsap/ScrollSmoother';
-import './App.css'
+import './styles/App.css'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero';
 import Wellcomemess from './Components/Wellcomemess/Wellcomemess';

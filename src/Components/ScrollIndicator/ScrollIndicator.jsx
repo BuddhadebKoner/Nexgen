@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import './ScrollIndicator.css';
+import '../../styles/ScrollIndicator.css';
 
 export default function ScrollIndicator() {
     gsap.registerPlugin(ScrollTrigger);
@@ -28,12 +28,12 @@ export default function ScrollIndicator() {
                 <div className="scrollIndicator_container">
                     <img
                         className='scrollIndicator_img'
-                        src="/scrollIndicater.svg"
+                        src="src/Assets/scrollIndicater.svg"
                         alt="Scroll Indicator"
                     />
                     <label htmlFor="scroll_arrow"></label>
                 </div>
-                <img className='scroll_arrow' src="scroll_arrow.svg" alt="" />
+                <img className='scroll_arrow' src="src/Assets/scroll_arrow.svg" alt="" />
             </div>
         </>
     );

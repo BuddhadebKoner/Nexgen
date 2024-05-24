@@ -3,39 +3,45 @@ import { useGSAP } from '@gsap/react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import './HeroBigText.css'
+import '../../styles/HeroBigText.css'
 
 gsap.registerPlugin(ScrollTrigger)
 
 
 export default function HeroBigText() {
     useGSAP(() => {
-        let tl = gsap.timeline()
 
-        tl.from('.hero_big_text_we span', {
+        gsap.from('.hero_big_text_we span', {
+            y: 100,
+            duration: 0.5,
+            opacity: 0,
+            delay: 0.5,
+            stagger: 0.12,
+            scrollTrigger: '.hero_big_text_we'
+        });
+        gsap.from('.hero_big_text_creating span', {
             y: 100,
             duration: 0.3,
             opacity: 0,
-            delay: 0.1,
+            delay: 0.5,
             stagger: 0.12,
+            scrollTrigger: '.hero_big_text_creating'
         });
-        tl.from('.hero_big_text_creating span', {
+        gsap.from('.hero_big_text_Engaging span', {
             y: 100,
             duration: 0.3,
             opacity: 0,
+            delay: 0.5,
             stagger: 0.12,
+            scrollTrigger: '.hero_big_text_Engaging',
         });
-        tl.from('.hero_big_text_Engaging span', {
-            y: 100,
-            duration: 0.3,
-            opacity: 0,
-            stagger: 0.12,
-        });
-        tl.from('.hero_big_text_Digital_Journeys span', {
+        gsap.from('.hero_big_text_Digital_Journeys span', {
             y: 100, 
             duration: 0.3,
             opacity: 0, 
+            delay: 0.5,
             stagger: 0.12,
+            scrollTrigger: '.hero_big_text_Digital_Journeys',
         });
     });
 
