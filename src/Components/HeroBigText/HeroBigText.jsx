@@ -4,6 +4,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import '../../styles/HeroBigText.css'
+import FloatNav from '../FloatNav/FloatNav'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -51,6 +52,7 @@ export default function HeroBigText() {
 
     return (
         <>
+         <FloatNav/>
             <div className="hero_big_text_container">
                 <div className="hero_big_text_we">
                     {createSpans('We')}

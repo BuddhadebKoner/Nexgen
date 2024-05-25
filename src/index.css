@@ -16,13 +16,13 @@ ol {
 /* Set default font family and size */
 body {
     width: 100vw;
-    height: 600vh;
+    height: 1000vh;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     font-size: 16px;
-    background-color: #0d1b2a;
+    background-color: rgb(54, 52, 52);
     overflow-y: auto;
     overflow-x: hidden;
     display: flex;

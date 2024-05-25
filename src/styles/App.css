@@ -1,3 +1,10 @@
+.Full_app_body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
 .Navbar_and_Hero{
     width: 100%;
     height: 200vh;
@@ -7,3 +14,18 @@
     flex-direction: column;   
     background: transparent;
 }
+
+/* animation for mouse cursor follow */
+
+.mouse_follow_box {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    z-index: 101;
+  }
+  

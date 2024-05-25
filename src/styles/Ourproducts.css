@@ -1,0 +1,46 @@
+.Our_product_section{
+    width: 100%;
+    height: 90rem;
+    background: #310404;
+    border-radius: 8rem 8rem 0 0;
+    background-image: url('https://images.pexels.com/photos/2459292/pexels-photo-2459292.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.product_heading_container{
+    width: 100%;
+    height: 20rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product_head_text{
+    color: white;
+    font-size: 9rem;
+    overflow: hidden;
+}
+
+.product_heading_spans{
+    width: fit-content;
+    height: fit-content;
+   overflow: hidden;
+}
+
+/* product design */
+
+.products_container{
+    width: 100%;
+    height: 47rem;
+    background: transparent;
+    border: 1px solid red;
+}
+
+.desc_about_products{
+    width: 100%;
+    height: 23rem;
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+}

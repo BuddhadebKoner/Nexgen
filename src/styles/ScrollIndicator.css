@@ -19,7 +19,7 @@
 }
 
 .scroll_arrow {
-    z-index: 2;
+    z-index: 90;
     position: fixed;
     width: 70px;
     right: 4.4rem;
