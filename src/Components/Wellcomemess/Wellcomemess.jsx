@@ -11,23 +11,24 @@ export default function Wellcomemess() {
 
     useGSAP(() => {
         gsap.to('.Wellcomemess_container h1', {
-            transform: 'translateX(-55%)',
+            transform: 'translateY(50%)',
             scrollTrigger: {
                 trigger: '.Wellcomemess_container',
                 scroller: 'body',
                 start: 'top 0%',
-                end: 'top -100%',
+                end: 'top -30%',
                 scrub: 3,
                 pin: true,
-                markers: false,
+                markers: true,
             },
         });
     });
 
     return (
         <>
+                {/* <h1>Technologys We USed</h1> */}
             <div className="Wellcomemess_container">
-                <h1>Welcome</h1>    
+                   <h1>Wellcome To NEXGEN</h1>
             </div>
         </>
     );

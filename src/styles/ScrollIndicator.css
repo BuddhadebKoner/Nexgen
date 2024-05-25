@@ -1,9 +1,9 @@
 .scrollIndicator_container {
     position: fixed;
     right: 5rem;
-    bottom: 3rem;
-    width: 150px;
-    height: 150px;
+    bottom: 5rem;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
 }
 
 .scrollIndicator_img {
-    width: 150px;
+    width: 100px;
     position: fixed;
     border-radius: 50%;
 }
@@ -21,7 +21,7 @@
 .scroll_arrow {
     z-index: 2;
     position: fixed;
-    width: 100px;
-    right: 6.4rem;
-    bottom: 4.6rem
+    width: 70px;
+    right: 4.4rem;
+    bottom: 4.4rem
 }

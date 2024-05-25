@@ -29,7 +29,8 @@ export default function Navbar() {
           NEXGEN
         </div>
         <div className="navbar__links">
-          <a href="#work" className="navbar__link">Work</a>
+          <a href="#work" className="navbar__link">Service</a>
+          <a href="#work" className="navbar__link">Product</a>
           <a href="#about" className="navbar__link">About</a>
           <a href="#contact" className="navbar__link">Contact</a>
           <a href="#blog" className="navbar__link">Blog</a>

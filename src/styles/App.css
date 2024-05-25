@@ -1,13 +1,9 @@
 .Navbar_and_Hero{
     width: 100%;
-    height: fit-content;
+    height: 200vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background-image: url('https://images.pexels.com/photos/2690323/pexels-photo-2690323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;   
-    
+    flex-direction: column;   
+    background: transparent;
 }

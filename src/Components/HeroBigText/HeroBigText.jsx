@@ -7,10 +7,8 @@ import '../../styles/HeroBigText.css'
 
 gsap.registerPlugin(ScrollTrigger)
 
-
 export default function HeroBigText() {
     useGSAP(() => {
-
         gsap.from('.hero_big_text_we span', {
             y: 100,
             duration: 0.5,
@@ -36,59 +34,35 @@ export default function HeroBigText() {
             scrollTrigger: '.hero_big_text_Engaging',
         });
         gsap.from('.hero_big_text_Digital_Journeys span', {
-            y: 100, 
+            y: 100,
             duration: 0.3,
-            opacity: 0, 
+            opacity: 0,
             delay: 0.5,
             stagger: 0.12,
             scrollTrigger: '.hero_big_text_Digital_Journeys',
         });
     });
 
+    const createSpans = (text) => {
+        return text.split('').map((char, index) => (
+            <span key={index} className='hero_big_text_span'>{char}</span>
+        ));
+    };
 
     return (
         <>
             <div className="hero_big_text_container">
                 <div className="hero_big_text_we">
-                    <span id="we" className='hero_big_text_span'>W</span>
-                    <span id="e" className='hero_big_text_span'>e</span>
+                    {createSpans('We')}
                 </div>
                 <div className="hero_big_text_creating">
-                    <span id="c" className='hero_big_text_span'>C</span>
-                    <span id="r" className='hero_big_text_span'>r</span>
-                    <span id="e" className='hero_big_text_span'>e</span>
-                    <span id="a" className='hero_big_text_span'>a</span>
-                    <span id="t" className='hero_big_text_span'>t</span>
-                    <span id="i" className='hero_big_text_span'>i</span>
-                    <span id="n" className='hero_big_text_span'>n</span>
-                    <span id="g" className='hero_big_text_span'>g</span>
+                    {createSpans('Creating')}
                 </div>
                 <div className="hero_big_text_Engaging">
-                    <span id="E" className='hero_big_text_span'>E</span>
-                    <span id="n" className='hero_big_text_span'>n</span>
-                    <span id="g" className='hero_big_text_span'>g</span>
-                    <span id="a" className='hero_big_text_span'>a</span>
-                    <span id="g" className='hero_big_text_span'>g</span>
-                    <span id="i" className='hero_big_text_span'>i</span>
-                    <span id="n" className='hero_big_text_span'>n</span>
-                    <span id="g" className='hero_big_text_span'>g</span>
+                    {createSpans('Engaging')}
                 </div>
                 <div className="hero_big_text_Digital_Journeys">
-                    <span className='hero_big_text_span'>D</span>
-                    <span className='hero_big_text_span'>i</span>
-                    <span className='hero_big_text_span'>g</span>
-                    <span className='hero_big_text_span'>i</span>
-                    <span className='hero_big_text_span'>t</span>
-                    <span className='hero_big_text_span'>a</span>
-                    <span className='hero_big_text_span'>l_</span>
-                    <span className='hero_big_text_span'>J</span>
-                    <span className='hero_big_text_span'>o</span>
-                    <span className='hero_big_text_span'>u</span>
-                    <span className='hero_big_text_span'>r</span>
-                    <span className='hero_big_text_span'>n</span>
-                    <span className='hero_big_text_span'>e</span>
-                    <span className='hero_big_text_span'>y</span>
-                    <span className='hero_big_text_span'>s</span>
+                    {createSpans('Digital_Journeys')}
                 </div>
             </div>
         </>
