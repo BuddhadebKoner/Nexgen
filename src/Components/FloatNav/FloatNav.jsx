@@ -18,10 +18,11 @@ export default function FloatNav() {
                 scrub: 1,
             },
             y: 50,
+            x: 250,
             opacity: 0,
+            visibility: 'visible',
             stagger: 0.1
-        })
-
+        });
     });
 
     return (

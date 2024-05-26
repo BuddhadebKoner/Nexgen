@@ -4,6 +4,7 @@ import String from '../String/String';
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Productslider from './Productslider';
 
 export default function Ourproducts() {
 
@@ -38,8 +39,10 @@ export default function Ourproducts() {
           </div>
         </div>
         <div className="products_container">
+          <Productslider />
         </div>
         <div className="desc_about_products">
+
         </div>
       </div>
         <String />

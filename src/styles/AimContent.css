@@ -2,13 +2,14 @@
 
 
 .Whats_Are_New_container_marque {
-    width: 100%;
+    width: 100vw;
     height: 9rem;
     background: #ef476f;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 1rem 0;
+    overflow: hidden;
 }
 
 .marque {
