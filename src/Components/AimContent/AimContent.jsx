@@ -114,7 +114,6 @@ export default function AimContent() {
           </div>
         </div>
       </div>
-      <String />
     </div>
   );
 }

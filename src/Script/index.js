@@ -4,6 +4,8 @@ import slideimage3 from '../Assets/Product_slider/image3.jpg';
 import slideimage4 from '../Assets/Product_slider/image4.jpg';
 import slideimage5 from '../Assets/Product_slider/image5.jpg';
 import slideimage6 from '../Assets/Product_slider/image6.jpg';
+import slideimage7 from '../Assets/Product_slider/image7.jpg';
+import slideimage8 from '../Assets/Product_slider/image8.jpg';
 
 
-export const sliderData = [slideimage1, slideimage2, slideimage3, slideimage4, slideimage5, slideimage6];
+export const sliderData = [slideimage1, slideimage2, slideimage3, slideimage4, slideimage5, slideimage6, slideimage7, slideimage8];

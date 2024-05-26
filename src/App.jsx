@@ -11,10 +11,24 @@ import { useGSAP } from '@gsap/react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import OurService from './Components/OurService/OurService';
+import Lenis from 'lenis';
+import Footer from './Components/Footer/Footer';
 
 gsap.registerPlugin(ScrollTrigger)
 
 function App() {
+
+  // for smooth scrolling
+  const lenis = new Lenis()
+
+
+  lenis.on('scroll', ScrollTrigger.update)
+
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000)
+  })
+
+  gsap.ticker.lagSmoothing(0)
 
 
   //  for mouse follow effect
@@ -48,6 +62,7 @@ function App() {
         <AimContent />
         <Ourproducts />
         <OurService />
+        <Footer />
       </div>
     </>
   )

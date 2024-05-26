@@ -45,7 +45,6 @@ export default function Ourproducts() {
 
         </div>
       </div>
-        <String />
     </>
   )
 }

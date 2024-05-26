@@ -7,10 +7,10 @@ import '../../styles/Hero.css'
 import HeroBigText from '../HeroBigText/HeroBigText'
 
 
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Hero() {
 
-    gsap.registerPlugin(ScrollTrigger)
 
     useGSAP(() => {
         let tl = gsap.timeline()

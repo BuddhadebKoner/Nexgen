@@ -37,7 +37,7 @@
 .about_us_desc {
     /* overflow: hidden; */
     width: 100%;
-    height: 90rem;
+    height: fit-content;
     background: transparent;
     display: flex;
     flex-direction: column;

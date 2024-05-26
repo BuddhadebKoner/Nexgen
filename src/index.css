@@ -22,7 +22,7 @@ body {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     font-size: 16px;
-    background-color: rgb(54, 52, 52);
+    background-color: black;
     overflow-y: auto;
     overflow-x: hidden;
     display: flex;

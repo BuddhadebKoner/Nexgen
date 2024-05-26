@@ -10,14 +10,14 @@ export default function Wellcomemess() {
     gsap.registerPlugin(ScrollTrigger); // Initialize ScrollTrigger plugin
 
     useGSAP(() => {
-        gsap.to('.Wellcomemess_container h1', {
-            transform: 'translateY(50%)',
+        gsap.to('.box', {
+            transform: 'translateX(-200%)',
             scrollTrigger: {
                 trigger: '.Wellcomemess_container',
                 scroller: 'body',
                 start: 'top 0%',
                 end: 'top -30%',
-                scrub: 3,
+                scrub: 1,
                 pin: true,
                 markers: true,
             },
@@ -28,7 +28,10 @@ export default function Wellcomemess() {
         <>
                 {/* <h1>Technologys We USed</h1> */}
             <div className="Wellcomemess_container">
-                   <h1>Wellcome To NEXGEN</h1>
+                   <div className="box"></div>
+                   <div className="box"></div>
+                   <div className="box"></div>
+                   <div className="box"></div>
             </div>
         </>
     );

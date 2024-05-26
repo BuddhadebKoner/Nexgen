@@ -7,6 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 import '../../styles/OurService.css'
 import Servicecontainer from './Servicecontainer';
+import String from '../String/String';
+
 
 export default function OurService() {
 
@@ -31,16 +33,21 @@ export default function OurService() {
         });
     })
 
-
     return (
         <>
-            <div className="oer_service_section">
+            <div className="our_service_section">
                 <div className="our_service_heading">
                     <div className="service_heading_spans">
                         {createSpansForHead('Our Services')}
                     </div>
                 </div>
-                <Servicecontainer />
+                <div className="service_container">
+                    <Servicecontainer />
+                    <String/>
+                    <Servicecontainer />
+                    <String/>
+                    <Servicecontainer />
+                </div>
             </div>
         </>
     )
