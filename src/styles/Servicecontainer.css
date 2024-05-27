@@ -4,6 +4,7 @@
     flex-direction: column;
     display: flex;
     align-items: center;
+    justify-content: center;
     background: transparent;
     margin: 2rem 0 2rem 0;
 }   
@@ -11,10 +12,12 @@
 .service_item_main {
     margin-top: 5rem;
     width: 70vw;
-    height: 25rem;
+    height: fit-content;
     background: transparent;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .service_item_content {
@@ -29,13 +32,14 @@
 }
 
 .service_item_image {
-    width: 60%;
-    height: 100%;
+    width: fit-content;
+    height: fit-content;
     padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .service_item_image img {

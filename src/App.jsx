@@ -13,8 +13,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import OurService from './Components/OurService/OurService';
 import Lenis from 'lenis';
 import Footer from './Components/Footer/Footer';
+import MoedernTech from './Components/MoedernTech/MoedernTech';
 
 gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(useGSAP)
 
 function App() {
 
@@ -62,6 +64,7 @@ function App() {
         <AimContent />
         <Ourproducts />
         <OurService />
+        <MoedernTech />
         <Footer />
       </div>
     </>

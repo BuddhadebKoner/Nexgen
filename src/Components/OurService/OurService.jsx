@@ -8,9 +8,13 @@ gsap.registerPlugin(ScrollTrigger);
 import '../../styles/OurService.css'
 import Servicecontainer from './Servicecontainer';
 import String from '../String/String';
+import { serviceCardData } from '../../Script';
+
 
 
 export default function OurService() {
+
+    const serviceCardArray = Object.values(serviceCardData);
 
     const createSpansForHead = (text) => {
         return text.split('').map((char, index) => (
@@ -33,6 +37,7 @@ export default function OurService() {
         });
     })
 
+
     return (
         <>
             <div className="our_service_section">
@@ -42,11 +47,17 @@ export default function OurService() {
                     </div>
                 </div>
                 <div className="service_container">
-                    <Servicecontainer />
-                    <String/>
-                    <Servicecontainer />
-                    <String/>
-                    <Servicecontainer />
+                    {serviceCardArray.map((card, index) => (
+                        <React.Fragment key={index}>
+                            <Servicecontainer
+                                Heading={card.heading}
+                                Paragraph={card.paragraph}
+                                BtnLink={card.btnLink}
+                                Image={card.image}
+                            />
+                            <String />
+                        </React.Fragment>
+                    ))}
                 </div>
             </div>
         </>

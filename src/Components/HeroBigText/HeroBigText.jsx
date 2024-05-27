@@ -49,10 +49,18 @@ export default function HeroBigText() {
             <span key={index} className='hero_big_text_span'>{char}</span>
         ));
     };
+    useGSAP(() => {
+        gsap.from('heroimage img', {
+            y: 100,
+            duration: 0.3,
+            opacity: 0,
+            delay: 0.5,
+        })
+    });
 
     return (
         <>
-         <FloatNav/>
+            <FloatNav />
             <div className="hero_big_text_container">
                 <div className="hero_big_text_we">
                     {createSpans('We')}
