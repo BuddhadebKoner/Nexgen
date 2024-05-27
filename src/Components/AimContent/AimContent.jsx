@@ -109,9 +109,7 @@ export default function AimContent() {
               <h1>I Am Ready To Go</h1>
             </div>
           </div>
-          <div className="Whats_Are_New_image_container">
-            {/* here will add a animation or video  */}
-          </div>
+          
         </div>
       </div>
     </div>

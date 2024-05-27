@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
-import { sliderData } from '../../Script';
+import { productDataCard } from '../../Script';
 import { useGSAP } from '@gsap/react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import '../../styles/Productslider.css'
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Productslider() {
 
@@ -36,15 +37,17 @@ export default function Productslider() {
             <div className="product_main_container">
                 <motion.div className='main_slider' ref={main_slider}>
                     <motion.div
-                        // whileTap={{cursor: "grabbing"}}
+                        // whileTap={{ cursor: "grabbing" }}
                         drag='x'
-                        dragConstraints={{ right: 0, left: -width }}
+                        dragConstraints={{ right: 0, left: -1000 }} // You may need to adjust the value of 'left' dynamically based on the content width
                         className='inner_slider'>
-                        {sliderData.map((image, index) => {
+                        {productDataCard.map((product, index) => {
                             return (
                                 <motion.div key={index} className='item'>
-                                    <img src={image} alt="slider_image" />
-                                    <h1>hello</h1>
+                                    <img src={product.image} alt={`${product.heading} image`} />
+                                    <h1>{product.heading}</h1>
+                                    <p>{product.paragraph}</p>
+                                    <a href={product.btnLink}>Learn More</a>
                                 </motion.div>
                             );
                         })}

@@ -21,7 +21,7 @@ export default function Ourproducts() {
 
   useGSAP(() => {
     gsap.from('.product_head_text', {
-      y: 100,
+      x: 100,
       duration: 0.3,
       opacity: 0,
       delay: 0.5,
