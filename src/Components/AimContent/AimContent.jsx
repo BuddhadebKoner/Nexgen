@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import '../../styles/AimContent.css';
 import String from '../String/String';
+import { ScrollBarAniamtionArrowImg } from '../../Script';
 
 // window.addEventListener('wheel', function (e) {
 //   if (e.deltaY > 0) {
@@ -74,26 +75,12 @@ export default function AimContent() {
   return (
     <div className="about_us_desc">
       <div className="Whats_Are_New_container_marque">
-        <div className="marque">
-          <h1>PUSH THE LIMITS</h1>
-          <img src="src/Assets/Loop_Scroll/arrow.svg" alt="" />
-        </div>
-        <div className="marque">
-          <h1>PUSH THE LIMITS</h1>
-          <img src="src/Assets/Loop_Scroll/arrow.svg" alt="" />
-        </div>
-        <div className="marque">
-          <h1>PUSH THE LIMITS</h1>
-          <img src="src/Assets/Loop_Scroll/arrow.svg" alt="" />
-        </div>
-        <div className="marque">
-          <h1>PUSH THE LIMITS</h1>
-          <img src="src/Assets/Loop_Scroll/arrow.svg" alt="" />
-        </div>
-        <div className="marque">
-          <h1>PUSH THE LIMITS</h1>
-          <img src="src/Assets/Loop_Scroll/arrow.svg" alt="" />
-        </div>
+        {Array.from({ length: 5 }).map((_, index) => (
+          <div className="marque" key={index}>
+            <h1>PUSH THE LIMITS</h1>
+            <img src={ScrollBarAniamtionArrowImg[0]} alt="" />
+          </div>
+        ))}
       </div>
       <String />
       <div className="Whats_Are_New_container">

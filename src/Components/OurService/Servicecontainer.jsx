@@ -9,7 +9,7 @@ export default function Servicecontainer({ Heading, Paragraph, BtnLink, Image}) 
         <div className="service_item_content">
           <h1>{Heading}</h1>
           <p>{Paragraph}</p>
-          <a href={BtnLink}>Get Started</a>
+          <a href={BtnLink}>Book Now</a>
         </div>
         <div className="service_item_image">
           <img src={Image} alt="" />

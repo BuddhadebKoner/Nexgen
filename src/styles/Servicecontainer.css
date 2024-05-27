@@ -43,7 +43,7 @@
 }
 
 .service_item_image img {
-    width: 25rem;
+    width: 37rem;
     height: 25rem;
     object-fit: cover;
     border: 1px solid white;
@@ -63,9 +63,11 @@
 }
 
 .service_item_content a {
-    width: 100px;
-    background-color: rgb(221, 109, 109);
-    color: black;
+    width: 200px;
+    height: 70px;
+    background-color: #ff4d00;
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
     border-radius: .125rem;
     align-items: center;
     padding: .375rem 1rem .475rem;

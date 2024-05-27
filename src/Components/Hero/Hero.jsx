@@ -5,6 +5,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import '../../styles/Hero.css'
 import HeroBigText from '../HeroBigText/HeroBigText'
+import { NexgenLogo } from '../../Script'
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -73,13 +74,13 @@ export default function Hero() {
             <div className="main_hero_container">
                 
                 <div className="hero_text_container">
-                    <img className="N_hero_image hero_logo_text" src="src/Assets/nexgen_text/N.svg" alt="" />
-                    <img className="E_hero_im</>age hero_logo_text" src="src/Assets/nexgen_text/E.svg" alt="" />
+                    <img className="N_hero_image hero_logo_text" src={NexgenLogo[0]} alt="" />
+                    <img className="E_hero_im</>age hero_logo_text" src={NexgenLogo[1]} alt="" />
                     <img
-                        className="X_hero_image hero_logo_text" src="src/Assets/nexgen_text/X.svg" alt="" />
-                    <img className="</div>G_hero_image hero_logo_text" src="src/Assets/nexgen_text/G.svg" alt="" />
-                    <img className="E_hero_image hero_logo_text" src="src/Assets/nexgen_text/E.svg" alt="" />
-                    <img className="N_hero_image hero_logo_text" src="src/Assets/nexgen_text/N.svg" alt="" />
+                        className="X_hero_image hero_logo_text" src={NexgenLogo[2]} alt="" />
+                    <img className="</div>G_hero_image hero_logo_text" src={NexgenLogo[3]} alt="" />
+                    <img className="E_hero_image hero_logo_text" src={NexgenLogo[1]} alt="" />
+                    <img className="N_hero_image hero_logo_text" src={NexgenLogo[0]} alt="" />
                 </div>
                 <div className="hero_sub_text_container">
                     <div className="all_h1_tags">

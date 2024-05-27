@@ -21,14 +21,15 @@ export default function Productslider() {
     }, []);
 
     useGSAP(() => {
-        gsap.from('.product_main_container', {
-            y: 100,
-            duration: 0.5,
-            opacity: 0,
-            delay: 0.5,
-            scrollTrigger: '.product_main_container'
-        });
-    });
+        gsap.to('.inner_slider', {
+            x: -width,
+            duration: 0,
+            repeat: -1,
+            ease: 'none',
+            yoyo: true,
+            // paused: main_slider.current && main_slider.current.matches(':hover'), 
+        })
+    },[]);
 
 
 

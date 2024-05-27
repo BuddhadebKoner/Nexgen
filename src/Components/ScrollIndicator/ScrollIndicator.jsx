@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import '../../styles/ScrollIndicator.css';
+import { ScrollIndicatorImg } from '../../Script';
 
 export default function ScrollIndicator() {
     gsap.registerPlugin(ScrollTrigger);
@@ -28,12 +29,12 @@ export default function ScrollIndicator() {
                 <div className="scrollIndicator_container">
                     <img
                         className='scrollIndicator_img'
-                        src="src/Assets/scrollIndicater.svg"
+                        src={ScrollIndicatorImg[0]}
                         alt="Scroll Indicator"
                     />
                     <label htmlFor="scroll_arrow"></label>
                 </div>
-                <img className='scroll_arrow' src="src/Assets/scroll_arrow.svg" alt="" />
+                <img className='scroll_arrow' src={ScrollIndicatorImg[1]} alt="" />
             </div>
         </>
     );

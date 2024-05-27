@@ -1,15 +1,3 @@
-import slideimage1 from '../Assets/Product_slider/image1.jpeg';
-import slideimage2 from '../Assets/Product_slider/image1.jpeg';
-import slideimage3 from '../Assets/Product_slider/image1.jpeg';
-import slideimage4 from '../Assets/Product_slider/image1.jpeg';
-import slideimage5 from '../Assets/Product_slider/image1.jpeg';
-import slideimage6 from '../Assets/Product_slider/image1.jpeg';
-import slideimage7 from '../Assets/Product_slider/image1.jpeg';
-import slideimage8 from '../Assets/Product_slider/image1.jpeg';
-
-
-export const sliderData = [slideimage1, slideimage2, slideimage3, slideimage4, slideimage5, slideimage6, slideimage7, slideimage8];
-
 export const productDataCard = [
   {
     heading: "App Development",
@@ -77,3 +65,18 @@ export const serviceCardData = [
     image: "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dXglMjB1aXxlbnwwfHwwfHx8MA%3D%3D"
   }
 ];
+
+
+// single assets are here -------- >>
+
+import Nlogo from '../Assets/nexgen_text/N.svg';
+import Elogo from '../Assets/nexgen_text/E.svg';
+import Xlogo from '../Assets/nexgen_text/X.svg';
+import Glogo from '../Assets/nexgen_text/G.svg';
+import ScrollArrow from '../Assets/scroll_arrow.svg';
+import ScrollIndicator from '../Assets/scrollIndicater.svg';
+import ScrollBarAniamtionArrow from '../Assets/Loop_Scroll/arrow.svg';
+
+export const NexgenLogo = [Nlogo, Elogo, Xlogo, Glogo];
+export const ScrollIndicatorImg = [ScrollIndicator, ScrollArrow];
+export const ScrollBarAniamtionArrowImg = [ScrollBarAniamtionArrow];
