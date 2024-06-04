@@ -60,7 +60,6 @@ export default function HeroBigText() {
 
     return (
         <>
-            <FloatNav />
             <div className="hero_big_text_container">
                 <div className="hero_big_text_we">
                     {createSpans('We')}

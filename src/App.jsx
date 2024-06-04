@@ -1,19 +1,15 @@
-import React from 'react'
-import './styles/App.css'
-import Navbar from './Components/Navbar/Navbar'
-import Hero from './Components/Hero/Hero';
-import AimContent from './Components/AimContent/AimContent';
-import ScrollIndicator from './Components/ScrollIndicator/ScrollIndicator';
-import Ourproducts from './Components/Ourproducts/Ourproducts';
+import React from 'react';
+import './styles/App.css';
 
 // gsap imports
 import { useGSAP } from '@gsap/react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import OurService from './Components/OurService/OurService';
 import Lenis from 'lenis';
-import Footer from './Components/Footer/Footer';
-import MoedernTech from './Components/MoedernTech/MoedernTech';
+
+// pages
+import Home from './Pages/Home';
+
 
 gsap.registerPlugin(ScrollTrigger)
 gsap.registerPlugin(useGSAP)
@@ -56,18 +52,10 @@ function App() {
         onMouseMove={handleMouseFollow}
         className="Full_app_body">
         <div className="mouse_follow_box"></div>
-        <ScrollIndicator />
-        <div className="Navbar_and_Hero">
-          <Navbar />
-          <Hero />
-        </div>
-        <AimContent />
-        <Ourproducts />
-        <OurService />
-        <MoedernTech />
-        <Footer />
+        <Home />
       </div>
     </>
+
   )
 
 }

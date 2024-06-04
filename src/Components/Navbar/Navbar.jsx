@@ -2,6 +2,9 @@ import React from 'react'
 import '../../styles/Navbar.css'
 import { useGSAP } from '@gsap/react'
 import { gsap } from 'gsap'
+import FloatNav from '../FloatNav/FloatNav'
+import ScrollIndicator from '../ScrollIndicator/ScrollIndicator'
+import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
 
@@ -24,9 +27,11 @@ export default function Navbar() {
 
   return (
     <>
+      <FloatNav />
+      <ScrollIndicator />
       <nav className="navbar">
         <div className="navbar__hero">
-          NEXGEN
+            NEXGEN
         </div>
         <div className="navbar__links">
           <a href="#work" className="navbar__link">Service</a>

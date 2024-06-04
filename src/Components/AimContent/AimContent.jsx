@@ -45,7 +45,7 @@ export default function AimContent() {
     })
   }, []);
 
-  
+
 
   // creating spans eseyly for head and para
 
@@ -84,19 +84,19 @@ export default function AimContent() {
       </div>
       <String />
       <div className="Whats_Are_New_container">
-        {/* <div className="Whats_Are_New_container_text">
-          {createSpansForHEad('WHAT WE DO !')}
-        </div> */}
         <div className="Whats_Are_New_container_description">
           <div className="descript_container_and_btn">
             <div className="descript_container">
-              {createSpansForpara('At Brandium we craft strong brand identities, visually striking website designs, and impactful marketing campaigns that go beyond the ordinary. We transform your business into a digital powerhouse')}
+ {createSpansForpara('At Brandium we craft strong brand identities, visually striking website designs, and impactful marketing campaigns that go beyond the ordinary. We transform your business into a digital powerhouse')}
             </div>
-            <div className="descript_container_btn">
-              <h1>I Am Ready To Go</h1>
+            <div className="descript_container_links">
+              <a className='descript_container_btn' href="">Get in touch</a>
+              <a className='descript_container_btn' href="">Explore</a>
+              <a className='descript_container_btn' href="">Contribute</a>
+              <a className='descript_container_btn' href="">Go</a>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>

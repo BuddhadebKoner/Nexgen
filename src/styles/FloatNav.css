@@ -4,13 +4,13 @@
     box-sizing: border-box;
     position: fixed;
     right: 4rem;
-    top: 4rem;
+    top:  20%;
     gap : 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: transparent;
+    background-color: green;
     color: rgb(255, 255, 255);
     z-index: 90;
 }
