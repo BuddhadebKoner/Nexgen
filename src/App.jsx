@@ -7,8 +7,11 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Lenis from 'lenis';
 
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
+import { Outlet } from 'react-router-dom';
+
 // pages
-import Home from './Pages/Home';
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -48,11 +51,13 @@ function App() {
   return (
 
     <>
+      <div className="mouse_follow_box"></div>
       <div
         onMouseMove={handleMouseFollow}
         className="Full_app_body">
-        <div className="mouse_follow_box"></div>
-        <Home />
+        <Navbar />
+        <Outlet/>
+        <Footer />
       </div>
     </>
 

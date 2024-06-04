@@ -31,14 +31,16 @@ export default function Navbar() {
       <ScrollIndicator />
       <nav className="navbar">
         <div className="navbar__hero">
+          <NavLink to="">
             NEXGEN
+          </NavLink>
         </div>
         <div className="navbar__links">
-          <a href="#work" className="navbar__link">Service</a>
-          <a href="#work" className="navbar__link">Product</a>
-          <a href="#about" className="navbar__link">About</a>
-          <a href="#contact" className="navbar__link">Contact</a>
-          <a href="#blog" className="navbar__link">Blog</a>
+          <NavLink to="Service" className="navbar__link">Service</NavLink>
+          <NavLink to="Product" className="navbar__link">Product</NavLink>
+          <NavLink to="about" className="navbar__link">About</NavLink>
+          <NavLink to="contact" className="navbar__link">Contact</NavLink>
+          <NavLink to="Blog" className="navbar__link">Blog</NavLink>
         </div>
       </nav>
     </>
