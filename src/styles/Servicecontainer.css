@@ -10,6 +10,7 @@
 }   
 
 .service_item_main {
+    backdrop-filter: blur(10px);
     margin-top: 5rem;
     width: 70vw;
     height: fit-content;

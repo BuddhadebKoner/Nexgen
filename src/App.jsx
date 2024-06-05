@@ -31,7 +31,6 @@ function App() {
 
   gsap.ticker.lagSmoothing(0)
 
-
   //  for mouse follow effect
 
   function handleMouseFollow(e) {

@@ -1,7 +1,7 @@
 .our_service_section {
     width: 100%;
     height: fit-content;
-   background-color: #5e548e;
+   background-color: transparent;
     overflow: hidden;
     display: flex;
     flex-direction: column;

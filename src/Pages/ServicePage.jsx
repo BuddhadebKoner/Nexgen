@@ -1,9 +1,10 @@
 import React from 'react'
+import Service from '../Components/OurService/OurService'
 
 export default function ServicePage() {
   return (
     <>
-    <h1>Service</h1>
+    <Service/>
     </>
   )
 }

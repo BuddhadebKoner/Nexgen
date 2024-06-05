@@ -10,9 +10,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: green;
+    background-color: transparent;
     color: rgb(255, 255, 255);
     z-index: 90;
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
 }
 
 .FloatNav__link {

@@ -1,11 +1,19 @@
 .navbar {
     width: 90vw;
-    height: 20vh;
+    height: fit-content;
+    margin: 22px 0;
+    padding: 0 30px;
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     align-items: center;
-    background-color: transparent;
     color: white;
+    background-color: rgb(52, 71, 103, 0.4);
+    backdrop-filter: blur(30px);
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 
 .navbar__hero {
@@ -15,12 +23,13 @@
 .navbar__hero a{
     color: white;
     text-decoration: none;
-
 }
 
 .navbar__links {
     display: flex;
+    padding: 20px 0;
     gap: 60px;
+    border-radius: 10px;
 }
 
 .navbar__link {

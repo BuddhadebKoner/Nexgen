@@ -1,12 +1,16 @@
 .main_hero_container{
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     background-color: transparent;
     border-radius: 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     position: relative;
+    background-image: url('https://demos.creative-tim.com/material-kit-react/static/media/bg-presentation.88963029.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero_text_container{

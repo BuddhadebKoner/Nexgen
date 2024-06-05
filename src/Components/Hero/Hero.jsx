@@ -42,16 +42,17 @@ export default function Hero() {
             scrollTrigger: {
                 trigger: '.hero_text_container',
                 scroller: 'body',
-                start: 'top 40%',
+                start: 'top 30%',
                 end: 'top -100%',
                 scrub: 4,
+                // markers: true,
             },
         })
     })
 
     useGSAP(() => {
         gsap.from('.all_h1_tags', {
-            y: -20,
+            x: 0,
             duration: 3,
             opacity: 0,
             delay: 0.5,
@@ -63,9 +64,10 @@ export default function Hero() {
             scrollTrigger: {
                 trigger: 'all_h1_tags h1',
                 scroller: 'body',
-                start: 'top 0%',
+                start: 'top -0%',
                 end: 'top -100%',
                 scrub: 4,
+                // markers: true,
             },
         })
     })

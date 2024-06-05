@@ -15,9 +15,11 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: red;
+    background-color: #ef476f;
+    backdrop-filter: blur(5px);
     border-radius: 50%;
     pointer-events: none;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 101;
