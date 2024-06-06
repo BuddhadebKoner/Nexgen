@@ -1,0 +1,14 @@
+making span tag 
+
+// const createSpansForpara = (text) => {
+  //   return text.split(' ').map((word, wordIndex) => (
+  //     <div key={wordIndex} className='about_para_word'>
+  //       {word.split('').map((char, charIndex) => (
+  //         <span key={charIndex} className='about_para_text'>
+  //           {char}
+  //         </span>
+  //       ))}
+  //       <span className='about_para_text'>&nbsp;</span>
+  //     </div>
+  //   ));
+  // };

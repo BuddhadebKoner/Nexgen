@@ -56,7 +56,7 @@ export default function String() {
             <div className="string_container">
                 <div className="string">
                     <svg ref={svgRef} width="1000" height="200">
-                        <path d='M 10 100 Q 500 100 990 100' stroke="white" strokeWidth="3" fill="  transparent" />
+                        <path d='M 10 100 Q 500 100 990 100' stroke="Black" strokeWidth="1.5" fill="  transparent" />
                     </svg>
                 </div>
             </div>
