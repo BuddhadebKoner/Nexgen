@@ -62,3 +62,7 @@ iframe {
     flex-direction: row;
     padding-top: 3rem;
 }
+
+.all_h1_tags h1{
+    font-weight: 600;
+}

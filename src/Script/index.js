@@ -84,26 +84,39 @@ export const ScrollBarAniamtionArrowImg = [ScrollBarAniamtionArrow];
 
 // for popup details 
 
+import Doclogo1 from '../Assets/Icons/Doc.svg';
+import Doclogo2 from '../Assets/Icons/ready.svg'
+import Doclogo3 from '../Assets/Icons/savings.svg'
+import DocLogo4 from '../Assets/Icons/support.svg'
 
 export const items = [
   {
-      id: 1,
-      title: 'Title 1',
-      subtitle: 'Subtitle 1'
+    id: 1,
+    title: 'Full Documentation',
+    subtitle: 'Built by developers for developers. Check the foundation and you will find everything inside our documentation.',
+    logo: Doclogo1,
+    Links : 'https://example.com'
   },
   {
-      id: 2,
-      title: 'Title 2',
-      subtitle: 'Subtitle 2'
+    id: 2,
+    title: 'Production Ready',
+    subtitle: 'Our components are production ready and you can use them in your projects right away. No need to worry about compatibility issues.',
+    logo: Doclogo2,
+    Links : 'https://example.com'
   },
   {
-      id: 3,
-      title: 'Title 3',
-      subtitle: 'Subtitle 3'
+    id: 3,
+    title: 'Savings',
+    subtitle: 'Save time and money by using our components. Spend more time on your project and less time on repetitive tasks.',
+    logo: Doclogo3,
+    Links : 'https://example.com'
   },
   {
-      id: 4,
-      title: 'Title 4',
-      subtitle: 'Subtitle 4'
+    id: 4,
+    title: 'Support',
+    subtitle: 'We provide support for all our components. If you have any questions or need help, feel free to reach out to us.',
+    logo: DocLogo4,
+    Links: 'https://example.com'
   },
 ];
+

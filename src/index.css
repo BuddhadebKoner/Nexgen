@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 /* Reset default styles */
 body,
 h1,
@@ -11,6 +16,11 @@ ul,
 ol {
     margin: 0;
     padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Set default font family and size */

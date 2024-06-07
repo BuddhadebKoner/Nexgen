@@ -41,7 +41,7 @@ function App() {
     gsap.to('.mouse_follow_box', {
       x: x,
       y: y,
-      duration: 0.5,
+      duration: 0.8,
       ease: 'power2.out'
     });
   }

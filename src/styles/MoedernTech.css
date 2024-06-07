@@ -1,5 +1,39 @@
 .main_container_MoedernTech{
     width: 100%;
     height: 100vh;
-    background: #000;
+    background: transparent;
+    padding: 0 9rem;
+}
+
+.Quary_question_container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    border-radius: 1rem;
+    background: transparent;
+}
+.p-accordion{
+    width: 100%;
+    height: 100%;
+}
+.expand_quarry_section{
+    width: 100%;
+    height: 100%;
+}
+.expand_quarry_section p{
+    font-size: 3rem;
+}
+
+.p-accordion-header-link{
+    width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #000000;
+}
+.p-accordion-toggle-icon{
+    margin-right: 2rem;
 }

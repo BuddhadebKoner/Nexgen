@@ -21,8 +21,10 @@ export default function Motionpopup() {
                         onClick={() => setSelectedId(item.id)}
                         className={`item-container Card_item-${item.id}`}
                     >
-                        <motion.h5 className="item-subtitle">{item.subtitle}</motion.h5>
+                        <motion.img src={item.logo} alt="logo" className="item-logo" />
                         <motion.h2 className="item-title">{item.title}</motion.h2>
+                        <motion.h5 className="item-subtitle">{item.subtitle}</motion.h5>
+                        <motion.p className="item-button">Learn More</motion.p>
                     </motion.div>
                 ))}
             </div>
@@ -34,14 +36,18 @@ export default function Motionpopup() {
                         onClick={() => setSelectedId(item.id)}
                         className={`item-container Card_item-${item.id}`}
                     >
-                        <motion.h5 className="item-subtitle">{item.subtitle}</motion.h5>
+                        <motion.img src={item.logo} alt="logo" className="item-logo" />
                         <motion.h2 className="item-title">{item.title}</motion.h2>
+                        <motion.h5 className="item-subtitle">{item.subtitle}</motion.h5>
+                        <motion.p  className="item-button">Learn More</motion.p>
                     </motion.div>
                 ))}
             </div>
             <AnimatePresence>
                 {selectedId && (
-                    <motion.div layoutId={selectedId} className="selected-item-container">
+                    <motion.div layoutId={selectedId} className="selected-item-container"
+                    onClick={() => setSelectedId(null)}
+                    >
                         {items.map(item => item.id === selectedId && (
                             <React.Fragment key={item.id}>
                                 <motion.button onClick={() => setSelectedId(null)} className="close-button">Close</motion.button>
