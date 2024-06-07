@@ -95,21 +95,21 @@ export const items = [
     title: 'Full Documentation',
     subtitle: 'Built by developers for developers. Check the foundation and you will find everything inside our documentation.',
     logo: Doclogo1,
-    Links : 'https://example.com'
+    Links: 'https://example.com'
   },
   {
     id: 2,
     title: 'Production Ready',
     subtitle: 'Our components are production ready and you can use them in your projects right away. No need to worry about compatibility issues.',
     logo: Doclogo2,
-    Links : 'https://example.com'
+    Links: 'https://example.com'
   },
   {
     id: 3,
     title: 'Savings',
     subtitle: 'Save time and money by using our components. Spend more time on your project and less time on repetitive tasks.',
     logo: Doclogo3,
-    Links : 'https://example.com'
+    Links: 'https://example.com'
   },
   {
     id: 4,
@@ -120,3 +120,22 @@ export const items = [
   },
 ];
 
+
+export const quaryQuestionData = {
+    q1 : {
+      heading: "What is the process for getting a quote?",
+      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    q2 : {
+      heading: "How far in advance should I book your services?",
+      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    q3 : {
+      heading: "What is your refund policy?",
+      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    q4 : {
+      heading: "Do you offer custom development services?",
+      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  }

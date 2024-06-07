@@ -18,7 +18,6 @@ const Counter = ({ endValue, duration = 5 }) => {
       trigger: counterRef.current,
       start: "top 100%",
       end: "bottom -10%",
-      markers: true,
       onEnter: () => {
         gsap.to({}, {
           duration: duration,
