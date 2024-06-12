@@ -88,6 +88,7 @@ import Doclogo1 from '../Assets/Icons/Doc.svg';
 import Doclogo2 from '../Assets/Icons/ready.svg'
 import Doclogo3 from '../Assets/Icons/savings.svg'
 import DocLogo4 from '../Assets/Icons/support.svg'
+// import exp from 'constants';
 
 export const items = [
   {
@@ -122,20 +123,141 @@ export const items = [
 
 
 export const quaryQuestionData = {
-    q1 : {
-      heading: "What is the process for getting a quote?",
-      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    q2 : {
-      heading: "How far in advance should I book your services?",
-      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    q3 : {
-      heading: "What is your refund policy?",
-      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    q4 : {
-      heading: "Do you offer custom development services?",
-      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    }
+  q1: {
+    heading: "What is the process for getting a quote?",
+    paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  q2: {
+    heading: "How far in advance should I book your services?",
+    paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  q3: {
+    heading: "What is your refund policy?",
+    paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  q4: {
+    heading: "Do you offer custom development services?",
+    paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  q5: {
+    heading: "How do I get in touch with your support team?",
+    paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  q6: {
+    heading: "What are your payment options?",
+    paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+
+}
+
+
+// File: ../../Script.js
+// File: ../../Script.js
+
+export const ProductService = {
+  card1: {
+    id: '1000',
+    code: 'f230fh0g3',
+    name: 'Bamboo Watch',
+    description: 'Product Description',
+    image: 'https://images.pexels.com/photos/415980/pexels-photo-415980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    price: 65,
+    category: 'Accessories',
+    quantity: 24,
+    inventoryStatus: 'INSTOCK',
+    rating: 5
+  },
+  card2: {
+    id: '1001',
+    code: 'nvklal433',
+    name: 'Black Watch',
+    description: 'Product Description',
+    image: 'https://images.pexels.com/photos/415980/pexels-photo-415980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    price: 72,
+    category: 'Accessories',
+    quantity: 61,
+    inventoryStatus: 'INSTOCK',
+    rating: 4
   }
+  // Add more products as needed
+};
+
+export const products = Object.values(ProductService);
+
+export const responsiveOptions = [
+  {
+    breakpoint: '1400px',
+    numVisible: 2,
+    numScroll: 1
+  },
+  {
+    breakpoint: '1199px',
+    numVisible: 3,
+    numScroll: 1
+  },
+  {
+    breakpoint: '767px',
+    numVisible: 2,
+    numScroll: 1
+  },
+  {
+    breakpoint: '575px',
+    numVisible: 1,
+    numScroll: 1
+  }
+];
+
+export const getSeverity = (product) => {
+  switch (product.inventoryStatus) {
+    case 'INSTOCK':
+      return 'success';
+    case 'LOWSTOCK':
+      return 'warning';
+    case 'OUTOFSTOCK':
+      return 'danger';
+    default:
+      return null;
+  }
+};
+
+
+
+import ReactLogo from '../Assets/tech_used_marque/ReactLogo.png'
+import Versal from '../Assets/tech_used_marque/Versal.png'
+import Fluter from '../Assets/tech_used_marque/FluterLogo.png'
+import Gpt from '../Assets/tech_used_marque/gptLogo.png'
+import JavaScriptLogo from '../Assets/tech_used_marque/JavaScriptLogo.png'
+import RubyLogo from '../Assets/tech_used_marque/RubyLogo.png'
+
+export const GetTechUsed = {
+  react: {
+    id: 1,
+    logo: ReactLogo,
+    alt: 'React',
+  },
+  Versal: {
+    id: 2,
+    logo: Versal,
+    alt: 'Versal',
+  },
+  Fluter: {
+    id: 3,
+    logo: Fluter,
+    alt: 'Fluter',
+  },
+  ChatGpt: {
+    id: 4,
+    logo: Gpt,
+    alt: 'Open AI',
+  },
+  JavaScript: {
+    id: 5,
+    logo: JavaScriptLogo,
+    alt: 'JavaScript',
+  },
+  Ruby: {
+    id: 6,
+    logo: RubyLogo,
+    alt: 'Ruby',
+  }
+}

@@ -36,14 +36,15 @@ export default function AimContent() {
         <String />
         <div className="mui_box_container">
           <div className="hover_card_mui_container">
-            <h1>hello friends</h1>
+            <h1>Free Demo
+              Do you want to test and see the benefits of this kit before purchasing it? You can give the demo version a try. It features enough basic components for you to get a feel of the design and also test the quality of the code. Get it free on GitHub!</h1>
           </div>
           <div className="motionpopup_container">
             <Motionpopup />
           </div>
         </div>
-          <String/>
-          <MoedernTech/>
+        <String />
+        <MoedernTech />
       </div>
     </div>
   );
