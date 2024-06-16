@@ -4,11 +4,8 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Marquee from 'react-fast-marquee';
 import MarqueTech from './MarqueTech';
-import {
-  Accordion,
-  AccordionTab,
-} from 'primereact/accordion';
-import { quaryQuestionData } from '../../Script';
+import Quearryaccordion from '../Quearryaccordion/Quearryaccordion';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,22 +21,7 @@ export default function MoedernTech() {
             <MarqueTech />
           </Marquee>
         </div>
-
-        <div className="Quary_question_container">
-          <Accordion activeIndex={activeIndex} onTabChange={(e) => setActiveIndex(e.index)}>
-            {Object.keys(quaryQuestionData).map((key, index) => (
-              <AccordionTab
-                tabIndex={-1}
-                key={index}
-                header={quaryQuestionData[key].heading}
-              >
-                <p className="expand_quarry_section">
-                  {quaryQuestionData[key].paragraph}
-                </p>
-              </AccordionTab>
-            ))}
-          </Accordion>
-        </div>
+        <Quearryaccordion />
       </div>
     </>
   );
