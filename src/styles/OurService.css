@@ -33,3 +33,9 @@
     width: 100%;
     height: fit-content;
 }
+
+.ServiceHeroAnimations{
+    width: 100%;
+    height: 100vh;
+    margin-top: 200px;
+}

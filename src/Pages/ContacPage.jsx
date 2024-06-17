@@ -1,9 +1,10 @@
 import React from 'react'
+import HeroAnimationLottie from '../Components/HeroAnimationLottie/HeroAnimationContact'
 
 export default function ContacPage() {
   return (
     <>
-    <h1>contact</h1>
+    <HeroAnimationLottie />
     </>
   )
 }
