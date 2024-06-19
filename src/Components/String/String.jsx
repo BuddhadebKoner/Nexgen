@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../../styles/String.css'
 
-
+// Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
 

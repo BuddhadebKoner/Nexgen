@@ -12,16 +12,18 @@ export default function Navbar() {
       let tl = gsap.timeline()
       tl.from('.navbar__hero', {
          y: -40,
-         duration: 0.7,
+         duration: 0.5,
          opacity: 0,
          delay: 0.5,
+         ease: 'power4.out'
       })
       tl.from('.navbar__link', {
          y: -20,
-         duration: 0.3,
+         duration: 0.4,
          opacity: 0,
          delay: 0,
          stagger: 0.05,
+         ease: 'elastic'
       })
    })
 

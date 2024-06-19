@@ -1,35 +1,133 @@
-# Project Showcase Website
+# NexGen
 
-This is a website that showcases my projects. It provides an overview of the projects I have worked on, along with relevant information and links.
+A brief description of your project.
 
-## Features
+## Table of Contents
 
-- **Project Cards**: Each project is represented by a card that includes a project image, title, description, and links to more details.
-- **Project Categories**: Projects are organized into different categories for easy navigation.
-- **Responsive Design**: The website is designed to be responsive and accessible on different devices.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Packages](#packages)
+  - [@gsap/react](#gsapreact)
+  - [@radix-ui/react-icons](#radix-uireact-icons)
+  - [@radix-ui/react-navigation-menu](#radix-uireact-navigation-menu)
+  - [class-variance-authority](#class-variance-authority)
+  - [clsx](#clsx)
+  - [framer-motion](#framer-motion)
+  - [gsap](#gsap)
+  - [lenis](#lenis)
+  - [lodash](#lodash)
+  - [lottie-react](#lottie-react)
+  - [primeicons](#primeicons)
+  - [primereact](#primereact)
+  - [react](#react)
+  - [react-dom](#react-dom)
+  - [react-fast-marquee](#react-fast-marquee)
+  - [react-router-dom](#react-router-dom)
+  - [smooth-scrollbar](#smooth-scrollbar)
 
-## Technologies Used
 
-- React
+## Explore Product
 
-## Getting Started
+- [NexGen](https://buddhadebkoner.github.io/Nexgen/)
 
-1. Clone the repository: `git clone `
+## Packages
 
-## Usage
+### @gsap/react
 
-- Browse through the project cards to explore different projects.
-- Click on a project card to view more details about the project.
-- Use the navigation menu to filter projects by category.
+**Version:** ^2.1.1
 
-## Contributing
+GSAP (GreenSock Animation Platform) plugin for React. Used for creating high-performance animations.
 
-Contributions are welcome! If you have any suggestions or improvements, please open an issue or submit a pull request.
+**Documentation:** [GSAP React](https://www.npmjs.com/package/@gsap/react)
+
+### @radix-ui/react-icons
+
+**Version:** ^1.3.0
+
+A collection of icons for React applications, provided by Radix UI.
+
+**Documentation:** [Radix UI Icons](https://www.radix-ui.com/icons)
+
+### framer-motion
+
+**Version:** ^11.2.6
+
+A production-ready motion library for React from Framer.
+
+**Documentation:** [Framer Motion](https://www.framer.com/motion/)
+
+### gsap
+
+**Version:** ^3.12.5
+
+GreenSock Animation Platform (GSAP) for high-performance animations.
+
+**Documentation:** [GSAP](https://gsap.com/)
+
+### lenis
+
+**Version:** ^1.0.45
+
+Smooth scrolling library for modern websites.
+
+**Documentation:** [Lenis](https://lenis.darkroom.engineering/)
+
+### lodash
+
+**Version:** ^4.17.21
+
+A modern JavaScript utility library delivering modularity, performance, & extras.
+
+**Documentation:** [Lodash](https://lodash.com/)
+
+### lottie-react
+
+**Version:** ^2.4.0
+
+A React library for rendering Lottie animations.
+
+**Documentation:** [Lottie React](https://lottiereact.com/)
+
+### react
+
+**Version:** ^18.2.0
+
+A JavaScript library for building user interfaces.
+
+**Documentation:** [React](https://react.dev/)
+
+### react-dom
+
+**Version:** ^18.2.0
+
+This package serves as the entry point to the DOM and server renderers for React.
+
+**Documentation:** [React DOM](https://reactrouter.com/en/main)
+
+### react-fast-marquee
+
+**Version:** ^1.6.4
+
+React component that efficiently renders a scrolling marquee.
+
+**Documentation:** [React Fast Marquee](https://github.com/justin-chu/react-fast-marquee)
+
+### react-router-dom
+
+**Version:** ^6.23.1
+
+DOM bindings for React Router, a collection of navigational components.
+
+**Documentation:** [React Router DOM](https://www.react-fast-marquee.com/)
+
+### smooth-scrollbar
+
+**Version:** ^8.8.4
+
+Customizable high-performance scrollbar plugin.
+
+**Documentation:** [Smooth Scrollbar](https://www.npmjs.com/package/smooth-scrollbar)
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-If you have any questions or want to get in touch, feel free to reach out to me at [@.com](mailto:@.com).
+Specify the license under which the project is distributed. For example:

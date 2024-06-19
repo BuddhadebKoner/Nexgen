@@ -6,6 +6,8 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import '../../styles/Productslider.css'
+
+// Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Productslider() {

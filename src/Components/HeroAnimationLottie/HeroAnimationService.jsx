@@ -1,11 +1,18 @@
 import React from 'react';
+import '../../styles/HeroAnimationLottie.css';
+
 
 
 import { useLottie } from 'lottie-react';
 import groovyWalkAnimation from '../../Animations/ServiceMagement.json';
 
+// Here all Gsap Imports
+import { useGSAP } from '@gsap/react';
+import { gsap } from 'gsap';
+
 const style = {
-    height: 700,
+    width: 650,
+    height: 650,
 };
 
 const interactivity = {
@@ -42,10 +49,23 @@ export default function HeroAnimationLottie() {
     // View sectioon for Lottie animations
     const { View } = useLottie(options);
 
+    useGSAP(() => {
+        gsap.from('.viewElement', {
+            y: 200,
+            duration: 2,
+            ease: 'elastic',
+        })
+    })
+
     return (
         <>
-            <div className="ServiceHeroAnimations">
-                {View}
+            <div className="ServiceHeroAnimations HeroAnimationLottieBaseContainer">
+                <div className="ServiceHeroCard HeroTextContainer">
+                    <h1>Hello Guys</h1>
+                </div>
+                <div className="viewElement">
+                    {View}
+                </div>
             </div>
         </>
     )

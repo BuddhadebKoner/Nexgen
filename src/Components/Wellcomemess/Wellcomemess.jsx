@@ -1,9 +1,15 @@
 import React, { useEffect, useRef } from 'react';
+// Gsap
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger'; // Import ScrollTrigger
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
+
+// Styles --> 
 import '../../styles/Wellcomemess.css';
+
+
 
 export default function Wellcomemess() {
 

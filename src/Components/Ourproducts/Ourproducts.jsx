@@ -5,51 +5,12 @@ import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Productslider from './Productslider';
+import HeroAnimationLottie from '../HeroAnimationLottie/HeroAnimationProduct';
 
-
-// Lottie animations 
-import { useLottie } from 'lottie-react';
-import groovyWalkAnimation from '../../Animations/ProductMaking.json';
-
-const style = {
-  height: 700,
-};
-
-const interactivity = {
-  mode: "scroll",
-  actions: [
-    {
-      visibility: [0, 0.2],
-      type: "stop",
-      frames: [0],
-    },
-    {
-      visibility: [0.2, 0.45],
-      type: "seek",
-      frames: [0, 45],
-    },
-    {
-      visibility: [0.45, 1.0],
-      type: "loop",
-      frames: [45, 60],
-    },
-  ],
-};
-
+gsap.registerPlugin(ScrollTrigger);
 
 
 export default function Ourproducts() {
-
-  // Lottie animations Options 
-  const options = {
-    animationData: groovyWalkAnimation,
-    loop: true,
-    interactivity: interactivity,
-    style: style,
-  };
-
-  // View sectioon for Lottie animations
-  const { View } = useLottie(options);
 
   const createSpansForHead = (text) => {
     return text.split('').map((char, index) => (
@@ -75,9 +36,7 @@ export default function Ourproducts() {
 
   return (
     <>
-      <div className="ProductHeroAnimations">
-        {View}
-      </div>
+    <HeroAnimationLottie />
       <div className="Our_product_section">
         <div className="product_heading_container">
           <div className="product_heading_spans">

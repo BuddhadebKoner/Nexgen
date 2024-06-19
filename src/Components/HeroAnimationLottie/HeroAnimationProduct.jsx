@@ -2,15 +2,17 @@ import React from 'react';
 import '../../styles/HeroAnimationLottie.css';
 
 
+// Lottie animations 
 import { useLottie } from 'lottie-react';
-import groovyWalkAnimation from '../../Animations/AboutUs.json';
+import groovyWalkAnimation from '../../Animations/ProductMaking.json';
+
+// Here all Gsap Imports
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 
-
 const style = {
-    width: 750,
-    height: 750,
+    width: 650,
+    height: 650,
 };
 
 const interactivity = {
@@ -36,6 +38,7 @@ const interactivity = {
 
 export default function HeroAnimationLottie() {
 
+    // Lottie animations Options 
     const options = {
         animationData: groovyWalkAnimation,
         loop: true,
@@ -43,6 +46,7 @@ export default function HeroAnimationLottie() {
         style: style,
     };
 
+    // View sectioon for Lottie animations
     const { View } = useLottie(options);
 
     useGSAP(() => {
@@ -55,9 +59,10 @@ export default function HeroAnimationLottie() {
 
     return (
         <>
-            <div className="AboutHeroAnimation HeroAnimationLottieBaseContainer">
-                
-                <div className="AboutHeroCard HeroTextContainer">
+            <div 
+            className="ProductHeroAnimations HeroAnimationLottieBaseContainer"
+            >
+                <div className="ProductHeroCard HeroTextContainer">
                     <h1>Hello Guys</h1>
                 </div>
                 <div className="viewElement">
@@ -65,6 +70,7 @@ export default function HeroAnimationLottie() {
                 </div>
             </div>
         </>
+
     )
 
 }
