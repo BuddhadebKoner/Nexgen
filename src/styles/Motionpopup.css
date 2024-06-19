@@ -1,0 +1,107 @@
+/* CSS for styling the components */
+
+/* Container for each item */
+.item-container {
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item-container:hover {
+  background-color: #e0e0e0;
+}
+
+/* Subtitle for each item */
+.item-subtitle {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Title for each item */
+.item-title {
+  font-size: 20px;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* Container for the selected item */
+.selected-item-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #000;
+  border-radius: 10px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Subtitle for the selected item */
+.selected-item-subtitle {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Title for the selected item */
+.selected-item-title {
+  font-size: 24px;
+  color: #000;
+  margin: 10px 0;
+}
+
+/* Close button for the selected item */
+.close-button {
+  padding: 10px 15px;
+  background-color: #ff5c5c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-button:hover {
+  background-color: #ff1a1a;
+}
+
+
+/* group_one_continer */
+
+.group_one_continer,
+.group_two_continer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 30px;
+}
+
+
+.Card_item-1,
+.Card_item-4 {
+  width: 60%;
+}
+
+.Card_item-2,
+.Card_item-3 {
+  width: 40%;
+}
+
+.Card_item-1,
+.Card_item-2,
+.Card_item-3,
+.Card_item-4 {
+  height: 300px;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}

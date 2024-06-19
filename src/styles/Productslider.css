@@ -1,0 +1,38 @@
+.product_main_container{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+}
+
+.item{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.item img{
+    width: 30rem;
+    height: 32rem;
+    border-radius: 2rem;
+    pointer-events: none;
+}
+
+.inner_slider{
+    width: fit-content;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background: transparent;
+}
+
+.main_slider{
+    overflow: hidden;
+    width: 100%;
+    height: 100%; 
+    background: transparent;
+} 
+
