@@ -1,13 +1,14 @@
 import React from 'react'
-import HeroAnimationLottie from '../Components/HeroAnimationLottie/HeroAnimationAbout'
-
-
-
+import HeroLottieAnimationContainer from '../Components/HeroLottieAnimationContainer/HeroLottieAnimationContainer'
+import { HeroAnimations } from '../Animations/animation'
 
 export default function AboutPage() {
+  console.log(HeroAnimations);
   return (
     <>
-    <HeroAnimationLottie/>
+      <HeroLottieAnimationContainer
+        animationLogoData={HeroAnimations[2]}
+      />
     </>
   )
 }

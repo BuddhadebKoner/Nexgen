@@ -2,7 +2,6 @@ import React from 'react'
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import HeroAnimationLottie from '../HeroAnimationLottie/HeroAnimationService';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,7 +42,6 @@ export default function OurService() {
 
     return (
         <>
-            <HeroAnimationLottie />
             <div className="our_service_section">
                 <div className="our_service_heading">
                     <div className="service_heading_spans">

@@ -1,14 +1,11 @@
 import React from 'react'
 import '../../styles/Ourproducts.css'
-import String from '../String/String';
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Productslider from './Productslider';
-import HeroAnimationLottie from '../HeroAnimationLottie/HeroAnimationProduct';
 
 gsap.registerPlugin(ScrollTrigger);
-
 
 export default function Ourproducts() {
 
@@ -36,7 +33,7 @@ export default function Ourproducts() {
 
   return (
     <>
-    <HeroAnimationLottie />
+    
       <div className="Our_product_section">
         <div className="product_heading_container">
           <div className="product_heading_spans">

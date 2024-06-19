@@ -1,0 +1,46 @@
+.viewElement {
+    width: fit-content;
+    height: fit-content;
+}
+
+/* for the About Hero Card Section */
+
+.HeroTextContainer {
+    width: fit-content;
+    height: fit-content;
+    background: #ffffff;   
+}
+
+
+.viewElementLottie{
+    width: 600px;
+    height: 600px;
+}
+
+/* Hero Card  */
+
+.HeroContainerCardText{
+    width: 100%;
+    height: 100vh;
+    padding-top: 10vh;
+    background-image: url('https://images.pexels.com/photos/35888/amazing-beautiful-breathtaking-clouds.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HeroContainerCardTextBlurbg{
+    width: 90%;
+    height: 90%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgb(52, 71, 103, 0.4);
+    backdrop-filter: blur(30px);
+}

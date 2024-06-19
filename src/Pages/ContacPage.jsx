@@ -1,10 +1,13 @@
 import React from 'react'
-import HeroAnimationLottie from '../Components/HeroAnimationLottie/HeroAnimationContact'
+import HeroLottieAnimationContainer from '../Components/HeroLottieAnimationContainer/HeroLottieAnimationContainer'
+import { HeroAnimations } from '../Animations/animation'
 
 export default function ContacPage() {
   return (
     <>
-    <HeroAnimationLottie />
+    <HeroLottieAnimationContainer 
+    animationLogoData={HeroAnimations[3]}  
+    />
     </>
   )
 }
