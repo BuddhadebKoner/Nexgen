@@ -1,8 +1,7 @@
 .main_container_MoedernTech {
     width: 100%;
-    height: 150vh;
     background: transparent;
-    padding: 0 9rem;
+    padding: 0 10rem 10rem 10rem;
 }
 
 .Quary_question_container {
@@ -26,8 +25,7 @@
     height: 100%;
     font-size: 1.5rem;
     background: transparent;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 3px;
     color: rgb(0, 0, 0);
     padding: 10px;
     line-height: 2;

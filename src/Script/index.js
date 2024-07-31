@@ -152,7 +152,6 @@ export const quaryQuestionData = {
 
 
 // File: ../../Script.js
-// File: ../../Script.js
 
 export const ProductService = {
   card1: {
